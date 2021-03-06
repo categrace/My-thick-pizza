@@ -1,4 +1,9 @@
 .jumbotron {
-    border-style: inset;
-    border-width: 4px;
+    border-style: double;
+    text-align: center;
+    background-image: url(/Images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
 }
+
