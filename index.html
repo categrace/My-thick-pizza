@@ -70,34 +70,39 @@
             </div>
         </div>
         <div class="order-row">
-            <div class="col-md-6 mt-4">
                 <h4>Kindly fill in your order details below</h4>
                 <form action="" id="pizzadetail">
-                    <label for="">Select your desired size</label>
-                    <select class="form-control" name="size" id="size">
-                        <option value= "1500">Mega @ Ksh 1500</option>
-                        <option value= "1200">Large @ Ksh 1200</option>
-                        <option value= "900">Medium @ Ksh 900</option>
-                        <option value= "600">Small @ Ksh600</option>
-                    </select>
-                    <label for="">Select your desired crust</label>
-                    <select class="form-control" name="" id="crust">
-                        <option value="150" name="crust">Stuffed @ Ksh 150</option>
-                        <option value="200" name="crust">Crispy  @ Ksh 200</option>
-                        <option value="300" name="crust">Glutten free @ Ksh 300 </option>
-                    </select>
-                    <div class="col-md-6">
-                        <label for="">Select your desired toppings</label>
-                        <input value="150" type="checkbox" id="toppingone">Onions
-                        <input value="300" type="checkbox" id="toppingone">Mushroom
-                        <input value="150" type="checkbox" id="toppingone">Pineapple
-                        <input value="200" type="checkbox" id="toppingone">Sweet corn
-                        <input value="200" type="checkbox" id="toppingone">Bacon
-                        <input value="150" type="checkbox" id="toppingone">Green pepper
-                        
+                    <div class="row">
+                        <div class="col-md-6 mt-4">
+                            <label for="">Select your desired size</label>
+                            <select class="form-control" name="size" id="size">
+                                <option value= "1500">Mega @ Ksh 1500</option>
+                                <option value= "1200">Large @ Ksh 1200</option>
+                                <option value= "900">Medium @ Ksh 900</option>
+                                <option value= "600">Small @ Ksh600</option>
+                            </select>
+                            <label for="">Select your desired crust</label>
+                            <select class="form-control" name="" id="crust">
+                                <option value="150" name="crust">Stuffed @ Ksh 150</option>
+                                <option value="200" name="crust">Crispy  @ Ksh 200</option>
+                                <option value="300" name="crust">Glutten free @ Ksh 300 </option>
+                            </select>
+                        </div>
+                        <div class="col"><br>
+                            <label for="">Select your desired toppings</label> <br>
+                            <input value="150" type="checkbox" id="toppingone">Onions
+                            <input value="300" type="checkbox" id="toppingone">Mushroom
+                            <input value="150" type="checkbox" id="toppingone">Pineapple
+                            <input value="200" type="checkbox" id="toppingone">Sweet corn
+                            <input value="200" type="checkbox" id="toppingone">Bacon
+                            <input value="150" type="checkbox" id="toppingone">Green pepper
+                            <label for="">Input Quantity</label>
+                            <input class="form-control form-group" type="text" id="numberofpizza">
+                            <button name="button" type="submit" id="submit" value="Check-Out"
+                            onclick="calctotalPrice()">Submit</button>
+                        </div>
                     </div>
                 </form>
-            </div>
         </div>
     </div>
     
