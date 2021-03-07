@@ -13,7 +13,7 @@ function getNumber() {
 }
 function onions(){
     let onion = 0;
-    let addOnions = getElementById("toppingone");
+    let addOnions = document.getElementById("toppingone");
     if (addOnions.checked === true) {
         onion=150;
     }
@@ -30,7 +30,7 @@ function mushrooms() {
     
 function pineapple(){
     let pineapple = 0;
-    let addPineapple = getElementById("toppingone");
+    let addPineapple = document.getElementById("toppingone");
     if (addPineapple.checked === true) {
         pineapple=150;
     }
@@ -38,7 +38,7 @@ function pineapple(){
 }
 function sweetCorn(){
     let sweetCorn = 0;
-    let addSweetcorn = getElementById("toppingone");
+    let addSweetcorn = document.getElementById("toppingone");
     if (addSweetcorn.checked === true) {
         sweetCorn=200;
     }
@@ -46,7 +46,7 @@ function sweetCorn(){
 }
 function bacon(){
     let bacon = 0;
-    let addBacon = getElementById("toppingone");
+    let addBacon = document.getElementById("toppingone");
     if (addBacon.checked === true) {
         bacon=200;
     }
@@ -54,7 +54,7 @@ function bacon(){
 }
 function greenPepper(){
     let greenPepper = 0;
-    let addgreenPepper = getElementById("toppingone");
+    let addgreenPepper = document.getElementById("toppingone");
     if (addgreenPepper.checked === true) {
         greenPepper=150;
     }
@@ -66,7 +66,7 @@ function calctotalPrice(e) {
     let totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
 
         console.log(totalPrice);
-    alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice +"." )
+    alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice +".For delivery services kindly enter your details" )
 
 }
 //Delivery
