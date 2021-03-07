@@ -9,4 +9,16 @@
 h4 {
     text-align:center
 }
-
+.footer {
+    display: inline;
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.order-row {
+    background-color:rgb(232, 246,164)
+}
+.col {
+    background-color:rgb(232, 246,164)  
+}
