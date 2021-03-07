@@ -11,7 +11,7 @@ function getNumber() {
     let selectedNumber = document.getElementById("pizzanumber").value;
     return parseInt(selectedNumber);
 }
-function Onions(){
+function onions(){
     let onion = 0;
     let addOnions = getElementById("toppingone");
     if (addOnions.checked === true) {
@@ -19,7 +19,7 @@ function Onions(){
     }
     return parseInt(onions);
 }
-function Mushrooms() {
+function mushrooms() {
     let mushroom = 0;
     let addMushroom = document.getElementById("toppingone");
     if (addMushroom.checked === true) {
@@ -28,7 +28,7 @@ function Mushrooms() {
     return parseInt(mushroom);
 }
     
-function Pineapple(){
+function pineapple(){
     let pineapple = 0;
     let addPineapple = getElementById("toppingone");
     if (addPineapple.checked === true) {
@@ -36,7 +36,7 @@ function Pineapple(){
     }
     return parseInt(pineapple);
 }
-function Sweetcorn(){
+function sweetCorn(){
     let sweetCorn = 0;
     let addSweetcorn = getElementById("toppingone");
     if (addSweetcorn.checked === true) {
@@ -44,7 +44,7 @@ function Sweetcorn(){
     }
     return parseInt(sweetcorn);
 }
-function Bacon(){
+function bacon(){
     let bacon = 0;
     let addBacon = getElementById("toppingone");
     if (addBacon.checked === true) {
@@ -52,7 +52,7 @@ function Bacon(){
     }
     return parseInt(bacon);
 }
-function Greenpepper(){
+function greenPepper(){
     let greenPepper = 0;
     let addgreenPepper = getElementById("toppingone");
     if (addgreenPepper.checked === true) {
@@ -63,8 +63,8 @@ function Greenpepper(){
 
 function calctotalPrice(e) {
     event.preventDefault();
-    var totalPrice = (getSizeCost() + getCrustCost() + onions()) * (getNumber());
-    
+    let totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
+
         console.log(totalPrice);
     alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice +"." )
 
