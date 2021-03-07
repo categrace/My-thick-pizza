@@ -1,56 +1,58 @@
 function getSizeCost() {
-    let selectedSize = getElementById("size").value;
+    let selectedSize = document.getElementById("size").value;
     return parseInt(selectedSize);
 }
+
 function getCrustCost() {
-    let selectedCrust = getElementById("crust").value;
+   let selectedCrust = document.getElementById("crust").value;
     return parseInt(selectedCrust);
 }
 function getNumber() {
-    let selectedNumber = getElementById("pizzanumber").value
+    let selectedNumber = document.getElementById("pizzanumber").value;
     return parseInt(selectedNumber);
 }
-function onions(){
-    let onions = 0;
-    let addonions = getElementById("toppingone");
-    if (addonions.checked === true) {
-        onions=150;
+function Onions(){
+    let onion = 0;
+    let addOnions = getElementById("toppingone");
+    if (addOnions.checked === true) {
+        onion=150;
     }
     return parseInt(onions);
 }
-function mushroom(){
+function Mushrooms() {
     let mushroom = 0;
-    let addmushroom = getElementById("toppingone");
-    if (addmushroom.checked === true) {
-        mushroom=300;
+    let addMushroom = document.getElementById("toppingone");
+    if (addMushroom.checked === true) {
+        mushroom = 150;
     }
     return parseInt(mushroom);
 }
-function pineapple(){
+    
+function Pineapple(){
     let pineapple = 0;
-    let addpineapple = getElementById("toppingone");
-    if (addpineapple.checked === true) {
+    let addPineapple = getElementById("toppingone");
+    if (addPineapple.checked === true) {
         pineapple=150;
     }
     return parseInt(pineapple);
 }
-function sweetcorn(){
-    let sweetcorn = 0;
-    let addsweetcorn = getElementById("toppingone");
-    if (addsweetcorn.checked === true) {
-        sweetcorn=200;
+function Sweetcorn(){
+    let sweetCorn = 0;
+    let addSweetcorn = getElementById("toppingone");
+    if (addSweetcorn.checked === true) {
+        sweetCorn=200;
     }
     return parseInt(sweetcorn);
 }
-function bacon(){
+function Bacon(){
     let bacon = 0;
-    let addbacon = getElementById("toppingone");
-    if (addbacon.checked === true) {
+    let addBacon = getElementById("toppingone");
+    if (addBacon.checked === true) {
         bacon=200;
     }
     return parseInt(bacon);
 }
-function greenPepper(){
+function Greenpepper(){
     let greenPepper = 0;
     let addgreenPepper = getElementById("toppingone");
     if (addgreenPepper.checked === true) {
@@ -61,7 +63,7 @@ function greenPepper(){
 
 function calctotalPrice(e) {
     event.preventDefault();
-    var totalPrice = (getSizeCost() + getCrustCost() + Onions()) * (getNumber());
+    var totalPrice = (getSizeCost() + getCrustCost() + onions()) * (getNumber());
     
         console.log(totalPrice);
     alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice +"." )
