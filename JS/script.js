@@ -76,7 +76,7 @@ $(document).ready(function () {
        let number = $("input#number").val();
        let location = $("input#location").val();
 
-       alert ("Hello" + name + ". Your order has been successfuly received and will be delivered to" + location + "within an hour. The delivery will cost Ksh /250= Thankyou for choosing MyThick-pizza")
+       alert ("Hello" + name + ". Your order has been successfuly received and will be delivered to" + location + "within an hour. The delivery will cost Ksh 250/= Thankyou for choosing MyThick-pizza")
     });
 });
 
