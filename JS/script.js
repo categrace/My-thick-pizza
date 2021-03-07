@@ -10,45 +10,45 @@ function getNumber() {
     let selectedNumber = getElementById("pizzanumber").value
     return parseInt(selectedNumber);
 }
-function Onions(){
-    let Onions = 0;
-    let addOnions = getElementById("toppingone");
-    if (addOnions.checked === true) {
-        Onions=150;
+function onions(){
+    let onions = 0;
+    let addonions = getElementById("toppingone");
+    if (addonions.checked === true) {
+        onions=150;
     }
-    return parseInt(Onions);
+    return parseInt(onions);
 }
-function Mushroom(){
-    let Mushroom = 0;
-    let addMushroom = getElementById("toppingone");
-    if (addMushroom.checked === true) {
-        Mushroom=300;
+function mushroom(){
+    let mushroom = 0;
+    let addmushroom = getElementById("toppingone");
+    if (addmushroom.checked === true) {
+        mushroom=300;
     }
-    return parseInt(Mushroom);
+    return parseInt(mushroom);
 }
-function Pineapple(){
-    let Pineapple = 0;
-    let addPineapple = getElementById("toppingone");
-    if (addPineapple.checked === true) {
-        Pineapple=150;
+function pineapple(){
+    let pineapple = 0;
+    let addpineapple = getElementById("toppingone");
+    if (addpineapple.checked === true) {
+        pineapple=150;
     }
-    return parseInt(Pineapple);
+    return parseInt(pineapple);
 }
-function Sweetcorn(){
-    let Sweetcorn = 0;
-    let addSweetcorn = getElementById("toppingone");
-    if (addSweetcorn.checked === true) {
-        Sweetcorn=200;
+function sweetcorn(){
+    let sweetcorn = 0;
+    let addsweetcorn = getElementById("toppingone");
+    if (addsweetcorn.checked === true) {
+        sweetcorn=200;
     }
-    return parseInt(Sweetcorn);
+    return parseInt(sweetcorn);
 }
-function Bacon(){
-    let Bacon = 0;
-    let addBacon = getElementById("toppingone");
-    if (addBacon.checked === true) {
-        Bacon=200;
+function bacon(){
+    let bacon = 0;
+    let addbacon = getElementById("toppingone");
+    if (addbacon.checked === true) {
+        bacon=200;
     }
-    return parseInt(Bacon);
+    return parseInt(bacon);
 }
 function greenPepper(){
     let greenPepper = 0;
