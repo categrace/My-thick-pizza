@@ -1,3 +1,7 @@
+function getPizzaType() {
+    let selectedType = document.getElementById("type").value;
+    return selectedType;
+}
 function getSizeCost() {
     let selectedSize = document.getElementById("size").value;
     return parseInt(selectedSize);
@@ -66,7 +70,7 @@ function calctotalPrice(e) {
     let totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
 
         console.log(totalPrice);
-    alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice +".For delivery services kindly enter your details" )
+    alert("Your order of " + getNumber() + " " +getPizzaType() +" pizzas has been processed.Your total amount payable is " + totalPrice +".For delivery services kindly enter your details" )
 
 }
 //Delivery

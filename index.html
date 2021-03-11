@@ -73,7 +73,18 @@
                 <h4>Kindly fill in your order details below</h4>
                 <form action="" id="pizzadetail">
                     <div class="row">
-                        <div class="col-md-6 mt-4">
+                        <div class="col-md-4">
+                            <label for="">Select your pizza type</label>
+                            <select class="form-control" name="type" id="type">
+                                <option value= "Chicken-Mushroom">Chicken-Mushroom</option>
+                                <option value= "Hawaiian">Hawaiian</option>
+                                <option value= "Magherita">Magherita</option>
+                                <option value= "Peperoni">Peperoni</option>
+                                <option value="Periperi">Periperi</option>
+                                <option value="Veg-supreme">Veg-supreme</option>
+                            </select> 
+                        </div>
+                        <div class="col-md-4 mt-4">
                             <label for="">Select your desired size</label>
                             <select class="form-control" name="size" id="size">
                                 <option value= "1500">Mega @ Ksh 1500</option>
@@ -88,7 +99,7 @@
                                 <option value="300" name="crust">Glutten free @ Ksh 300 </option>
                             </select>
                         </div>
-                        <div class="col"><br>
+                        <div class="col-md-4"><br>
                             <label for="">Select your desired toppings</label> <br>
                             <input value="150" type="checkbox" id="toppingone">Onions
                             <input value="300" type="checkbox" id="toppingone">Mushrooms
